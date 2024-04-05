@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Inked</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Style for the navigation links */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #6B4E2E; 
+            text-align: right;
+            font-weight: bold;
+            font-family: 'Times New Roman', serif; 
+            text-transform: uppercase; 
+        }
+
+        nav li {
+            display: inline;
+            font-size: 20px; 
+            margin-left: 20px; 
+        }
+
+        nav li a {
+            display: inline-block;
+            padding: 10px 20px; 
+            color: #FFFFFF; 
+            text-decoration: none;
+            transition: background-color 0.3s; 
+        }
+
+        nav li a:hover {
+            background-color: #966F33; 
+        }
+        /* Style for the header */
+        header {
+            height: 150px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            background-color: #ece7e7; 
+        }
+
+        .logo img {
+            width: 200px; 
+            height: auto; 
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px; 
+            color: #333; 
+        }
+
+        p {
+            font-family: 'Lato', sans-serif; 
+            font-size: 18px;
+            color: #000000; 
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px; 
+        }
+
+        .image-wrapper {
+            flex: 0 0 30%;
+            margin-bottom: 30px; 
+        }
+
+        .image-wrapper img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 50px;
+        }
+
+        .image-wrapper p {
+            text-align: center; 
+            margin-top: 10px; 
+        }
+
+        .cta-button {
+            display: block;
+            width: 200px; 
+            margin: 40px auto; 
+            padding: 15px;
+            background-color: #333; 
+            color: white; 
+            text-align: center; 
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif; 
+            font-size: 20px; 
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        .cta-button:hover {
+            background-color: #111; 
+        }
+
+        footer {
+            background-color: #6B4E2E; 
+            color: #030303; 
+            padding: 20px 0; 
+            text-align: center; 
+            font-family: 'Times New Roman', serif; 
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Simply Inked">
+            <h1>Simply Inked Tattoos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="homepage">
+            <h1>Welcome to Simply Inked Tattoo store!</h1>
+            <p>"Where Simplicity Meets Expression: Simply Inked - Your Canvas, Our Passion."</p><br><br><br>
+            
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <a href="elegantrose.html">
+                        <img src="images/elegantrose.png" alt="Elegant Rose">
+                        <p>Elegant Roses Tattoo</p>
+                    </a>
+                </div>
+                <div class="image-wrapper">
+                    <a href="lotusflower.html">
+                        <img src="images/lotusflower.png" alt="Lotus Flower">
+                        <p>Lotus Flower Tattoo</p>
+                    </a>
+                </div>
+                <div class="image-wrapper">
+                    <a href="pineapple.html">
+                        <img src="images/pineapple.png" alt="Pineapple">
+                        <p>Pineapple Tattoo - Semi Permanent</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <a href="smallsnakes.html">
+                        <img src="images/Smallsnakes.png" alt="Small Snakes">
+                        <p>NEW Mini Snake Tattoo - Semi Permanent</p>
+                    </a>
+                </div>
+                <div class="image-wrapper">
+                    <a href="bluebg.html">
+                        <img src="images/bluebg1.png" alt="Blue Background">
+                        <p>12-pack Tattoo's</p>
+                    </a>
+                </div>
+                <div class="image-wrapper">
+                    <a href="compass.html">
+                        <img src="images/compass.png" alt="Compass">
+                        <p>Compass Tattoo</p>
+                    </a>
+                </div>
+            </div>
+
+            <a href="product.html" class="cta-button">Shop Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Simply Inked. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

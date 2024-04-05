@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pineapple Tattoo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Style for the slideshow container */
+        .slideshow-container {
+            max-width: 25%; 
+            position: relative;
+            margin: auto;
+            display: block;
+        }
+
+        /* Style for the slideshow images */
+        .mySlides img {
+            width: 100%; 
+            height: auto;
+        }
+
+        /* Style for the description text */
+        .description {
+            text-align: center; 
+            margin-top: 20px; 
+        }
+
+        /* Style for the "Add to Cart" button */
+        .add-to-cart-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="MahDev Tattoos">
+            <h1>Simply Inked  Tattoos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="description">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/pineapple1.png" alt="Pineapple 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/pineapple2.png" alt="Pineapple 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/pineapple3.png" alt="Pineapple 3">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/pineapple4.png" alt="Pineapple 4">
+                </div>
+            </div>
+            <br>
+            <div class="description">
+                <p>PRICE $41.33</p>
+                <p>Semi-permanent collection</p>
+                <p>Try a more realistic style of tattoo with this Pineapple Tattoo. Featuring the all new semi-permanent collection that uses pigment instead of ink and lasts up to 14 days. This tattoo looks super realistic and will transform your body into a work of art!</p>
+                <p>Size: 2.5 in x 4 in</p><br>
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Selling Out! All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); 
+        }
+
+        function addToCart() {
+            alert("Successfully added to cart!");
+        }
+    </script>
+</body>
+</html>

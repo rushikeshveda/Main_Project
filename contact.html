@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Simply Inked Tattoos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+        #contact-info {
+            margin-bottom: 50px;
+        }
+
+        #contact-info h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #contact-info p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        #contact-info ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #contact-info ul li {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        #contact-form {
+            margin-bottom: 50px;
+        }
+
+        #contact-form h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #contact-form form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form label {
+            font-size: 18px;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        #contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        #contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Simply Inked Tattoos">
+            <h1>Simply Inked Tattoos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: info@simplyinkedtattoos.com</li>
+                <li>Phone: +1 (123) 456-7890</li>
+                <li>Address: 123 Tattoo Street, Cityville, State, Country</li>
+            </ul>
+        </section>
+
+        <section id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" onsubmit="return submitForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Simply Inked Tattoos. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function submitForm() {
+            alert("Thank you for reaching out. We will respond within 24 hours.");
+            return false; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Roses Tattoo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Style for the slideshow container */
+        .slideshow-container {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            margin-top: 20px; 
+        }
+
+        /* Style for the slideshow images */
+        .slideshow-container img {
+            width: 100%; 
+            max-width: 400px; 
+        }
+
+        /* Style for the product description */
+        .product-description {
+            text-align: center;
+            font-family: 'Times New Roman', serif; 
+            font-size: 18px; 
+            margin-top: 20px; 
+        }
+
+        /* Style for the add to cart button */
+        .add-to-cart button {
+            display: block; 
+            margin: auto; 
+            margin-top: 20px; 
+            padding: 10px 20px; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+        }
+
+        /* Style for the button hover effect */
+        .add-to-cart button:hover {
+            background-color: #45a049; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="MahDev Tattoos">
+            <h1>Simply Inked  Tattoos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slideshow-container">
+            <img class="mySlides" src="images/elegantrose.png">
+            <img class="mySlides" src="images/elegantrose1.png">
+            <img class="mySlides" src="images/elegantrose2.png">
+            <img class="mySlides" src="images/elegantrose3.png">
+        </div>
+
+        <div class="product-description">
+            <p>Elegant Roses Tattoo</p>
+            <p>SALE PRICE $2.74</p>
+            <p>REGULAR PRICE $27.55</p>
+            <p>Graceful allure in every petal: Elegant Roses Tattoo, a timeless floral classic.</p>
+            <p>Size: 2.5 in x 4 in</p>
+        </div>
+        
+        <div class="add-to-cart">
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Selling Out! All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function addToCart() {
+            alert("Successfully added to cart!");
+        }
+    </script>
+</body>
+</html>

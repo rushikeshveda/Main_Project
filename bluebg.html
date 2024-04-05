@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-pack Tattoo Bundle</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Style for the slideshow container */
+        .slideshow-container {
+            max-width: 25%; 
+            position: relative;
+            margin: auto;
+            display: block;
+        }
+
+        /* Style for the slideshow images */
+        .mySlides img {
+            width: 100%; 
+            height: auto;
+        }
+
+        /* Style for the description text */
+        .description {
+            text-align: center; 
+            margin-top: 20px;
+        }
+
+        /* Style for the "Add to Cart" button */
+        .add-to-cart-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Simply Inked Tattoos">
+            <h1>Simply Inked Tattoos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="description">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/bluebg.png" alt="Blue Background">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/bluebg1.png" alt="Blue Background 1">
+                </div>
+            </div>
+            <br>
+            <div class="description">
+                <p>PRICE $27.55</p>
+                <p>Guiding ink: Blue Background Tattoo, a symbol of calmness and tranquility.</p>
+                <p>Size: 2.5 in x 4 in</p>
+                <p>Type: Lasts upto 2 weeks</p><br>
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Selling Out! All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function addToCart() {
+            alert("Successfully added to cart!");
+        }
+    </script>
+</body>
+</html>
